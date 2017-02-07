@@ -202,7 +202,7 @@
 		if(src:wear_mask)
 			items += src:wear_mask
 	if(hasvar(src,"wear_neck"))
-       		if(src:wear_neck)
+		if(src:wear_neck)
 			items += wear_neck
 	if(hasvar(src,"wear_suit"))
 		if(src:wear_suit)
