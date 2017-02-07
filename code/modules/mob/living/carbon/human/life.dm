@@ -268,7 +268,6 @@
 
 
 /mob/living/carbon/human/has_smoke_protection()
-	var/obj/item/clothing/head_clothes = null
 	if(wear_mask)
 		if(wear_mask.flags & BLOCK_GAS_SMOKE_EFFECT)
 			. = 1
