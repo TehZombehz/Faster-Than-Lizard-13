@@ -275,8 +275,8 @@ BLIND     // can't see anything
 	. = list()
 	if(!isinhands)
 		if(body_parts_covered & HEAD)
-			if(damaged_clothes)
-				. += image("icon"='icons/effects/item_damage.dmi', "icon_state"="damagedmask")
+//			if(damaged_clothes)		//we don't have that coded in yet
+//				. += image("icon"='icons/effects/item_damage.dmi', "icon_state"="damagedmask")
 			if(blood_DNA)
 				. += image("icon"='icons/effects/blood.dmi', "icon_state"="maskblood")
 
