@@ -268,11 +268,13 @@
 
 
 /mob/living/carbon/human/has_smoke_protection()
+//	var/obj/item/clothing/head_clothes = null			//unused if i leave it in, undefined if i don't
+									//compiler is drunk
 	if(wear_mask)
 		if(wear_mask.flags & BLOCK_GAS_SMOKE_EFFECT)
 			. = 1
-		if(wear_neck)
-			head_clothes = wear_neck
+//		if(wear_neck)
+//			head_clothes = wear_neck
 	if(glasses)
 		if(glasses.flags & BLOCK_GAS_SMOKE_EFFECT)
 			. = 1
