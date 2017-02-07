@@ -127,9 +127,9 @@
 	icon_state = "zebrascarf"
 	item_color = "zebrascarf"
 /obj/item/clothing/neck/scarf/christmas
-name = "christmas scarf"
-icon_state = "christmasscarf"
-item_color = "christmasscarf"
+	name = "christmas scarf"
+	icon_state = "christmasscarf"
+	item_color = "christmasscarf"
 
 //The three following scarves don't have the scarf subtype
 //This is because Ian can equip anything from that subtype
