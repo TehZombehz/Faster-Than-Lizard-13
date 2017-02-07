@@ -139,13 +139,13 @@
 		emote("scratch")
 
 /mob/living/carbon/monkey/has_smoke_protection()
-	var/obj/item/clothing/head_clothes = null
-
+//	var/obj/item/clothing/head_clothes = null			//unused if i leave it in, undefined if i don't
+									//compiler is drunk
 	if(wear_mask)
 		if(wear_mask.flags & BLOCK_GAS_SMOKE_EFFECT)
 			return 1
-		if(wear_neck)
-			head_clothes = wear_neck
+//		if(wear_neck)					
+//			head_clothes = wear_neck
 
 /mob/living/carbon/monkey/handle_fire()
 	if(..())
