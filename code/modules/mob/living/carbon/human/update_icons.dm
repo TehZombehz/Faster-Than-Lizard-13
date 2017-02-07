@@ -458,7 +458,7 @@ There are several things that need to be remembered:
 	if(client && hud_used && hud_used.hud_shown)
 		if(hud_used.inventory_shown)
 			client.screen += I
-	update_observer_view(I,1)
+//	update_observer_view(I,1)		//not sure what this does, but all the others don't have them so I'm assuming this isn't necessary.
 
 
 
