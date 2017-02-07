@@ -360,7 +360,7 @@
 		if(H.glasses)	H.glasses.screen_loc = null
 		if(H.w_uniform)	H.w_uniform.screen_loc = null
 		if(H.wear_suit)	H.wear_suit.screen_loc = null
-		if(H.wear_neck)	screenmob.client.screen -= H.wear_neck
+		if(H.wear_neck)	H.wear_neck.screen_loc = null
 		if(H.wear_mask)	H.wear_mask.screen_loc = null
 		if(H.head)		H.head.screen_loc = null
 
