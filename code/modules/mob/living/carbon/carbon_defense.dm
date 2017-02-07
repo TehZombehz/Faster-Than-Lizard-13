@@ -107,8 +107,9 @@
 		stomach_contents.Add(C)
 		add_logs(src, C, "devoured")
 		
+//	var/obj/item/clothing/hit_clothes			//clothing damage update stuff again
 		if(wear_neck)
 			wear_neck.add_mob_blood(src)
 			update_inv_neck()
-		if(wear_neck)
-			hit_clothes = wear_neck
+//		if(wear_neck)					//clothing damage update
+//			hit_clothes = wear_neck			//ditto
