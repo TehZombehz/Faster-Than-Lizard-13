@@ -349,7 +349,7 @@
 			H.client.screen += H.wear_mask
 		if(H.wear_neck)
 			H.wear_neck.screen_loc = ui_neck
-			screenmob.client.screen += H.wear_neck
+			h.client.screen += H.wear_neck
 		if(H.head)
 			H.head.screen_loc = ui_head
 			H.client.screen += H.head
