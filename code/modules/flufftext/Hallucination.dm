@@ -244,7 +244,7 @@ Gunshots/explosions/opening doors/less rare audio (done)
 /obj/effect/hallucination/battle/New(loc,var/mob/living/carbon/T)
 	target = T
 	var/hits = rand(3,6)
-	switch(rand(1,5))
+	switch(rand(1,7))
 		if(1) //Laser fight
 			for(var/i=0,i<hits,i++)
 				target << sound('sound/weapons/Laser.ogg',0,1,0,25)
@@ -270,6 +270,14 @@ Gunshots/explosions/opening doors/less rare audio (done)
 		if(5) // Tick Tock
 			for(var/i=0,i<hits,i++)
 				target << sound('sound/items/timer.ogg',0,1,0,25)
+				sleep(15)
+		if(6) // PING!
+			for(var/i=0,i<hits,i++)
+				target << sound('sound/weapons/garand_ping.ogg',0,1,0,25)
+				sleep(15)
+		if(7) // muffled gunshots
+			for(var/i=0,i<hits,i++)
+				target << sound('sound/weapons/Gunshot_silenced.ogg',0,1,0,25)
 				sleep(15)
 	qdel(src)
 
