@@ -282,7 +282,7 @@
 	id = "c17hmr_hp"
 	req_tech = list("combat" = 3, "materials" = 2)
 	build_type = PROTOLATHE
-	materials = list(MAT_METAL = 30000, MAT_SILVER = 6000
+	materials = list(MAT_METAL = 30000, MAT_SILVER = 6000)
 	build_path = /obj/item/ammo_box/c17hmr/hp
 	category = list("Weapons")
 	
