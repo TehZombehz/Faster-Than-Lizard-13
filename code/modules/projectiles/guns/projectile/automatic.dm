@@ -561,7 +561,7 @@
 		empty_alarm()
 	return
 	
-/obj/item/weapon/gun/projectile/automatic/garand/empty_alarm()
+/obj/item/weapon/gun/projectile/automatic/garand/empty_alarm(mob/living/user)
 	if(!chambered && !get_ammo() && !alarmed)
 		user << "<span class='warning'>The clip ejects from \the [src]!</span>"
 		playsound(src.loc, eject_sound, 40, 1)
