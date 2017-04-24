@@ -208,6 +208,8 @@
 	materials = list(MAT_METAL = 4000)
 	build_path = /obj/item/ammo_box/magazine/wt550m9
 	category = list("Ammo")
+	
+/* rolled into ammo stuff below
 
 /datum/design/mag_oldsmg/ap_mag
 	name = "WT-550 Auto Gun Armour Piercing Magazine (4.6x30mm AP)"
@@ -215,6 +217,8 @@
 	id = "mag_oldsmg_ap"
 	materials = list(MAT_METAL = 6000, MAT_SILVER = 600)
 	build_path = /obj/item/ammo_box/magazine/wt550m9/wtap
+	
+*/
 
 /datum/design/mag_oldsmg/ic_mag
 	name = "WT-550 Auto Gun Incendiary Magazine (4.6x30mm IC)"
@@ -269,3 +273,106 @@
 	materials = list(MAT_SILVER = 8000, MAT_GOLD = 8000, MAT_URANIUM = 8000, MAT_GLASS = 12000, MAT_METAL = 12000, MAT_DIAMOND = 3000)
 	build_path = /obj/item/weapon/gun/energy/gravity_gun
 	category = list("Weapons")
+	
+//hollowwpoint ammunition
+
+/datum/design/hp_ammo
+	name = "Ammo box (.17 HMR JHP)"
+	desc = "An ammo box containing .17 Hornady Magnum Rimfire hollowpoint ammunition."
+	id = "c17hmr_hp"
+	req_tech = list("combat" = 3, "materials" = 2)
+	build_type = PROTOLATHE
+	materials = list(MAT_METAL = 30000, MAT_SILVER = 6000
+	build_path = /obj/item/ammo_box/c17hmr/hp
+	category = list("Weapons")
+	
+/datum/design/hp_ammo/c223
+	name = "Ammo box (.223 Remington SpHP)"
+	desc = "An ammo box containing .223 Remington spitzer-hollowpoint ammunition."
+	id = "c223_hp"
+	build_path = /obj/item/ammo_box/c223/hp
+	
+/datum/design/hp_ammo/c3006
+	name = "Ammo box (.30-06 Springfield SpHP)"
+	desc = "An ammo box containing .30-06 Springfield spitzer-hollowpoint ammunition."
+	id = "c3006_hp"
+	build_path = /obj/item/ammo_box/c3006/hp
+	
+/datum/design/hp_ammo/c308
+	name = "Ammo box (.308 Winchester SpHP)"
+	desc = "An ammo box containing .308 Winchester spitzer-hollowpoint ammunition."
+	id = "c308_hp"
+	build_path = /obj/item/ammo_box/c308/hp
+	
+/datum/design/hp_ammo/a357
+	name = "Speedloader (.357 JHP)"
+	desc = "A speedloader containing .357 Magnum hollowpoint ammunition."
+	id = "a357_hp"
+	build_path = /obj/item/ammo_box/a357/hp
+
+/datum/design/hp_ammo/a44mag
+	name = "Ammo box (.44 Magnum JHP)"
+	desc = "An ammo box containing .44 Magnum hollowpoint ammunition."
+	id = "a44mag_hp"
+	build_path = /obj/item/ammo_box/c44mag/hp
+
+/datum/design/hp_ammo/c45
+	name = "Ammo box (.45 ACP JHP)"
+	desc = "An ammo box containing .45 Automatic hollowpoint ammunition."
+	id = "c45_hp"
+	build_path = /obj/item/ammo_box/c45/hp
+	
+/datum/design/hp_ammo/c50ae
+	name = "Ammo box (.50 AE JHP)"
+	desc = "An ammo box containing .50 Action Express hollowpoint ammunition."
+	id = "c50ae_hp"
+	build_path = /obj/item/ammo_box/c50ae/hp
+
+/datum/design/hp_ammo/c46x30mm
+	name = "Ammo box (HK 4.6x30mm JHP)"
+	desc = "An ammo box containing 4.6x30mm hollowpoint ammunition."
+	id = "c46x30mm_hp"
+	build_path = /obj/item/ammo_box/c46x30mm/hp
+	
+/datum/design/hp_ammo/c556x45mm
+	name = "Ammo box (5.56x45mm NATO SpHP)"
+	desc = "An ammo box containing 5.56x45mm NATO spitzer-hollowpoint ammunition."
+	id = "c556_hp"
+	build_path = /obj/item/ammo_box/c556x45/hp
+	
+/datum/design/hp_ammo/c57x28mm
+	name = "Ammo box (FN 5.7x28mm JHP)"
+	desc = "An ammo box containing 5.7x28mm hollowpoint ammunition."
+	id = "c57x28mm_hp"
+	build_path = /obj/item/ammo_box/c57x28mm/hp
+	
+/datum/design/hp_ammo/c762x39mm
+	name = "Ammo box (7.62x39mm SpHP)"
+	desc = "An ammo box containing 7.62x39mm spitzer-hollowpoint ammunition."
+	id = "c762x39_hp"
+	build_path = /obj/item/ammo_box/c762x39/hp
+	
+/datum/design/hp_ammo/c9x18mm
+	name = "Ammo box (9x18mm JHP)"
+	desc = "An ammo box containing 9x18mm Makarov hollowpoint ammunition."
+	id = "c9x18mm_hp"
+	build_path = /obj/item/ammo_box/c9x18mm/hp
+	
+/datum/design/hp_ammo/c9mm
+	name = "Ammo box (9x19mm NATO JHP)"
+	desc = "An ammo box containing 9x19mm Parabellum/Luger/NATO hollowpoint ammunition."	//this cart has so many names i swear
+	id = "c9mm_hp"
+	build_path = /obj/item/ammo_box/c9mm/hp
+	
+/datum/design/hp_ammo/c10mm
+	name = "Ammo box (10mm Auto JHP)"
+	desc = "An ammo box containing 10mm Automatic hollowpoint ammunition."
+	id = "c10mm_hp"
+	build_path = /obj/item/ammo_box/c10mm/hp
+	
+/datum/design/c50bmg_narq_ammo
+	name = "Ammo box (.50 BMG, Tranquilizer)"
+	desc = "An ammo box containing .50 Browning MG tranquilizer ammunition, for putting your target to sleep, rather than six feet under."
+	id = "c50bmg_narq"
+	materials = list(MAT_METAL = 30000, MAT_SILVER = 5000, MAT_GOLD = 2500, MAT_GLASS = 12000)
+	build_path = /obj/item/ammo_box/c50bmg/tranq
