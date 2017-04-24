@@ -132,6 +132,7 @@
 /obj/item/weapon/gun/projectile/automatic/wt550
 	name = "security auto rifle"
 	desc = "An outdated personal defence weapon. Uses 4.6x30mm rounds and is designated the WT-550 Automatic Rifle."
+	origin_tech = "combat=3;materials=2;engineering=3"
 	icon_state = "wt550"
 	item_state = "arg"
 	spread = 6			//cheap malaysian piece of shit
@@ -150,6 +151,7 @@
 	desc = "A battle rifle chambered in 4.6x30mm, first manufactured in 2524. Bears the logo of Misriah Armory laser-engraved into the cheek plate. The firing selector has a 3-round-burst and a semi-automatic mode."
 	icon_state = "br55"
 	item_state = "c20r"
+	origin_tech = "combat=6;materials=3;engineering=2"
 	spread = 4
 	mag_type = /obj/item/ammo_box/magazine/br55
 	fire_delay = 1
@@ -170,6 +172,7 @@
 	icon_state = "br55civ"
 	mag_type = /obj/item/ammo_box/magazine/br55/civilian
 	spread = 2		//you lose the burst, but get better accuracy because less kick
+	origin_tech = "combat=4;materials=3;engineering=2"
 	fire_delay = 2
 	can_suppress = 0
 	burst_size = 0
@@ -536,6 +539,7 @@
 	desc = "This .30-06 rifle is well-known for its eight-round en-bloc clip that ejects with a distinctive <i>ping!</i>, and its use during a war in the early 1940s."
 	icon_state = "garand"
 	item_state = "moistnugget"
+	origin_tech = "combat=7;materials=4;engineering=4"
 	mag_type = /obj/item/ammo_box/magazine/enbloc
 	actions_types = list()
 	fire_delay = 2
@@ -559,7 +563,7 @@
 	
 /obj/item/weapon/gun/projectile/automatic/garand/empty_alarm()
 	if(!chambered && !get_ammo() && !alarmed)
-		src.visible_message("<span class='warning'>The clip ejects from \the [src]!</span>")
+		user << "<span class='warning'>The clip ejects from \the [src]!</span>"
 		playsound(src.loc, eject_sound, 40, 1)
 		magazine.loc = get_turf(src.loc)
 		magazine.update_icon()
