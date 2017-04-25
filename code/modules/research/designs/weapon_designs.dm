@@ -224,6 +224,7 @@
 	name = "WT-550 Auto Gun Incendiary Magazine (4.6x30mm IC)"
 	desc = "A 20 round armour piercing magazine for the out of date security WT-550 Auto Rifle"
 	id = "mag_oldsmg_ic"
+	req_tech = list("combat" = 4, "materials" = 4)
 	materials = list(MAT_METAL = 6000, MAT_SILVER = 600, MAT_GLASS = 1000)
 	build_path = /obj/item/ammo_box/magazine/wt550m9/wtic
 
@@ -231,6 +232,7 @@
 	name = "WT-550 Auto Gun Uranium Magazine (4.6x30mm TX)"
 	desc = "A 20 round uranium tipped magazine for the out of date security WT-550 Auto Rifle"
 	id = "mag_oldsmg_tx"
+	req_tech = list("combat" = 4, "materials" = 4, "biotech" = 4)
 	materials = list(MAT_METAL = 6000, MAT_SILVER = 600, MAT_URANIUM = 2000)
 	build_path = /obj/item/ammo_box/magazine/wt550m9/wttx
 
@@ -280,7 +282,7 @@
 	name = "Ammo box (.17 HMR JHP)"
 	desc = "An ammo box containing .17 Hornady Magnum Rimfire hollowpoint ammunition."
 	id = "c17hmr_hp"
-	req_tech = list("combat" = 3, "materials" = 2)
+	req_tech = list("combat" = 4, "materials" = 2)
 	build_type = PROTOLATHE
 	materials = list(MAT_METAL = 30000, MAT_SILVER = 6000)
 	build_path = /obj/item/ammo_box/c17hmr/hp
@@ -370,9 +372,118 @@
 	id = "c10mm_hp"
 	build_path = /obj/item/ammo_box/c10mm/hp
 	
+//armour-piercing ammo
+
+/datum/design/ap_ammo
+	name = "Ammo box (.17 HMR HV AP)"
+	desc = "An ammo box containing .17 Hornady Magnum Rimfire armour-piercing ammunition."
+	id = "c17hmr_ap"
+	req_tech = list("combat" = 5, "materials" = 3)
+	build_type = PROTOLATHE
+	materials = list(MAT_METAL = 30000, MAT_SILVER = 5500, MAT_DIAMOND = 500)
+	build_path = /obj/item/ammo_box/c17hmr/ap
+	category = list("Weapons")
+	
+/datum/design/ap_ammo/c223
+	name = "Ammo box (.223 Remington AP-T)"
+	desc = "An ammo box containing .223 Remington armour-piercing tracer ammunition."
+	id = "c223_ap"
+	build_path = /obj/item/ammo_box/c223/ap
+	
+/datum/design/ap_ammo/c3006
+	name = "Ammo box (.30-06 Springfield AP-T)"
+	desc = "An ammo box containing .30-06 armour-piercing tracer ammunition."
+	id = "c3006_ap"
+	build_path = /obj/item/ammo_box/c3006/ap
+	
+/datum/design/ap_ammo/c308
+	name = "Ammo box (.308 Winchester AP-T)"
+	desc = "An ammo box containing .308 armour-piercing tracer ammunition."
+	id = "c308_ap"
+	build_path = /obj/item/ammo_box/c308/ap
+	
+/datum/design/ap_ammo/a357
+	name = "Speedloader (.357 HV AP)"
+	desc = "An ammo box containing .357 Magnum armour-piercing ammunition."
+	id = "a357_ap"
+	build_path = /obj/item/ammo_box/a357/ap
+	
+/datum/design/ap_ammo/c44mag
+	name = "Ammo box (.44 Magnum HV AP)"
+	desc = "An ammo box containing .44 Magnum armour-piercing ammunition."
+	id = "a44mag_ap"
+	build_path = /obj/item/ammo_box/c44mag/ap
+	
+/datum/design/ap_ammo/c45acp
+	name = "Ammo box (.45 ACP HV AP)"
+	desc = "An ammo box containing .45 Automatic armour-piercing ammunition."
+	id = "c45_ap"
+	build_path = /obj/item/ammo_box/c45/ap
+	
+/datum/design/ap_ammo/c50ae
+	name = "Ammo box (.50 Action Express HV AP)"
+	desc = "An ammo box containing .50 Action Express armour-piercing ammunition."
+	id = "c50ae_ap"
+	build_path = /obj/item/ammo_box/c50ae/ap
+	
+/datum/design/ap_ammo/c46x30mm
+	name = "Ammo box (HK 4.6x30mm HV AP)"
+	desc = "An ammo box containing 4.6x30mm armour-piercing ammunition."
+	id = "c46x30mm_ap"
+	build_path = /obj/item/ammo_box/c46x30mm/ap
+
+/datum/design/ap_ammo/c556x45mm
+	name = "Ammo box (5.56x45mm NATO AP-T)"
+	desc = "An ammo box containing 5.56x45mm NATO armour-piercing tracer ammunition."
+	id = "c556_ap"
+	build_path = /obj/item/ammo_box/c556x45/ap
+	
+/datum/design/ap_ammo/c57x28mm
+	name = "Ammo box (FN 5.7x28mm HV AP)"
+	desc = "An ammo box containing 5.7x28mm armour-piercing ammunition."
+	id = "c57x28mm_ap"
+	build_path = /obj/item/ammo_box/c57x28mm/ap
+	
+/datum/design/ap_ammo/c762x39mm
+	name = "Ammo box (7.62x39mm AP-T)"
+	desc = "An ammo box containing 7.62x39mm armour-piercing tracer ammunition."
+	id = "c762x39_ap"
+	build_path = /obj/item/ammo_box/c762x39/ap
+	
+/datum/design/ap_ammo/c762x51mm
+	name = "Ammo box (7.62x51mm NATO AP-T)"
+	desc = "An ammo box containing 7.62x51mm NATO armour-piercing tracer ammunition."
+	id = "c762x51_ap"
+	build_path = /obj/item/ammo_box/c762x51/ap
+	
+/datum/design/ap_ammo/c9x18mm
+	name = "Ammo box (9x18mm HV AP)"
+	desc = "An ammo box containing 9x18mm Makarov armour-piercing ammunition."
+	id = "c9x18mm_ap"
+	build_path = /obj/item/ammo_box/c9x18mm/ap
+
+/datum/design/ap_ammo/c9mm
+	name = "Ammo box (9x19mm NATO HV AP)"
+	desc = "An ammo box containing 9x19mm Parabellum/Luger/NATO armour-piercing ammunition."
+	id = "c9mm_ap"
+	build_path = /obj/item/ammo_box/c9mm/ap
+
+/datum/design/ap_ammo/c10mm
+	name = "Ammo box (10mm Auto HV AP)"
+	desc = "An ammo box containing 10mm Automatic armour-piercing ammunition."
+	id = "c10mm_ap"
+	build_path = /obj/item/ammo_box/c10mm/ap
+
+
+
+//less than lethal
+	
 /datum/design/c50bmg_narq_ammo
 	name = "Ammo box (.50 BMG, Tranquilizer)"
 	desc = "An ammo box containing .50 Browning MG tranquilizer ammunition, for putting your target to sleep, rather than six feet under."
 	id = "c50bmg_narq"
-	materials = list(MAT_METAL = 30000, MAT_SILVER = 5000, MAT_GOLD = 2500, MAT_GLASS = 12000)
+	req_tech = list("combat" = 5, "materials" = 3, "biotech" = 1)	//biotech because sedatives
+	materials = list(MAT_METAL = 30000, MAT_SILVER = 5000, MAT_GOLD = 2500, MAT_GLASS = 12000)	//expensive as hell, yo
 	build_path = /obj/item/ammo_box/c50bmg/tranq
+	
+
